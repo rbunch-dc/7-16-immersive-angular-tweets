@@ -26,8 +26,8 @@
 <body ng-controller="tweetController">
 
 	<div class="" ng-repeat="tweet in tweets">
-		<img ng-src="{{tweet.img}}">
-		<li>{{tweet.userName}}</li>
+		<img ng-src="{{tweet.user.profile_banner_url}}">
+		<li>CONTENT: {{tweet.text}}</li>
 	</div>
 
 </body>
