@@ -1,6 +1,13 @@
 <!DOCTYPE html>
 <html ng-app="tweetApp">
 <head>
+
+	<style type="text/css" media="screen">
+		.active{
+			font-size: 50px;
+		}
+	</style>
+
 	<title></title>
 
 	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.8/angular.min.js"></script>
@@ -10,15 +17,23 @@
 
 	<script type="text/javascript" src="js/tweetModule.js"></script>
 	<script type="text/javascript" src="js/tweetController.js"></script>
+	<script type="text/javascript" src="js/homeController.js"></script>
+	<script type="text/javascript" src="js/trumpController.js"></script>
+
 
 </head>
 <body ng-controller="tweetController">
 
-	<tweet-hello></tweet-hello>
+<!-- 	<tweet-hello></tweet-hello>
 	<div hello-attr></div>
-	<div turn-me-blue class="hello-class"></div>
+	<div turn-me-blue=myColor class="hello-class"></div>
 
-	<div turn-me-blue>Hover over me and I will console. I'm a custom diretive!</div>
+	<input type="text" ng-model="myColor" name="">
+
+	<div turn-me-blue>Hover over me and I will console. I'm a custom diretive!</div> -->
+
+	<custom-menu></custom-menu>
+	<div ng-view></div>
 
 </body>
 </html>
