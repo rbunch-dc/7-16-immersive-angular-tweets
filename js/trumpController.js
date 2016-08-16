@@ -1,4 +1,3 @@
-tweetApp.controller('trumpController', function($scope, $http,$routeParams){
+tweetApp.controller('trumpController', function($scope, $http){
 	$scope.trumpPage = 'trump';
-	console.log($routeParams);
 });
