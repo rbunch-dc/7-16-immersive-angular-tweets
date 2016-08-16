@@ -31,5 +31,5 @@ var tweet2 = new Tweet('This is the title2', 'dc4life', 'This is some content fo
 tweets.push(tweet1);
 tweets.push(tweet2);
 
-console.log(tweets)
+// console.log(tweets)
 
