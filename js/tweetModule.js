@@ -1,9 +1,13 @@
 // Initialize the app
-var tweetApp = angular.module('tweetApp', ['ngRoute']);
+var tweetApp = angular.module('tweetApp', ['ngRoute', 'ngMaterial']);
+
+  var googlesSyntax = "";
+  var g = 2;
+
 
 tweetApp.config(function($routeProvider){
 	//At / load up home.html, with home controller	
-	$routeProvider.when('/',{
+	$routeProvider.when('/	',{
 		templateUrl: 'views/home.html',
 		controller: 'tweetController'
 	});
@@ -55,4 +59,5 @@ tweetApp.controller('AnotherController', function($scope, myFactory){
     console.log(myFactory.getVar());
     // "this is a variable"
 })
+
 
